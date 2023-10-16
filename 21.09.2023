@@ -1,0 +1,23 @@
+import random
+
+# Генерируем список из 10 случайных чисел от 1 до 100
+random_numbers = [random.randint(1, 100) for _ in range(10)]
+
+print("Исходный список случайных чисел:", random_numbers)
+
+# Сортируем список по возрастанию
+sorted_numbers = sorted(random_numbers)
+
+print("Отсортированный список:", sorted_numbers)
+
+# Вычисляем среднее значение
+average = sum(random_numbers) / len(random_numbers)
+
+print("Среднее значение:", average)
+
+# Находим максимальное и минимальное значения
+maximum = max(random_numbers)
+minimum = min(random_numbers)
+
+print("Максимальное значение:", maximum)
+print("Минимальное значение:", minimum)
